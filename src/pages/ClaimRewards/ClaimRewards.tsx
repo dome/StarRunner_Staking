@@ -43,7 +43,7 @@ export const ClaimRewards = () => {
       <p className={styles.claim_available}>
         Available:{" "}
         <span className={styles.claim_available_value}>{formattedRewards}</span>
-        <span> STRU</span>
+        <span> BTOKEN</span>
       </p>
       <button
         className={s.page_submit_btn + " " + styles.claim_btn}

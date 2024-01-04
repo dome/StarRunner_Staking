@@ -61,13 +61,13 @@ export const MainInfo = () => {
   return (
     <section className={s.hero}>
       <div className={s.hero_container}>
-        <h1 className={s.hero_title}>StarRunner Token staking</h1>
+        <h1 className={s.hero_title}>FreeFarm Token staking</h1>
         <ul className={s.hero_info}>
           <li className={s.hero_info_balance}>
             <span className={s.hero_amount}>
               {formattedStakedBalance ? formattedStakedBalance : "0.00"}
             </span>
-            <span className={s.hero_stru}>STRU</span>{" "}
+            <span className={s.hero_stru}>ATOKEN</span>{" "}
             <HelpBtn
               name="balance"
               handleShowPrompt={handleShowPrompt}
@@ -99,7 +99,7 @@ export const MainInfo = () => {
             <span className={s.hero_amount}>
               {formattedUserRewards ? formattedUserRewards : "0"}
             </span>{" "}
-            <span className={s.hero_stru}>STRU</span>{" "}
+            <span className={s.hero_stru}>BTOKEN</span>{" "}
             <HelpBtn
               name="rewards"
               handleShowPrompt={handleShowPrompt}

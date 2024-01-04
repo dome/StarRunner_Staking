@@ -10,12 +10,12 @@ export const yupSchema = (balance: string) => {
       })
       .test(
         "Min value",
-        `Min value 0.000000000000000001 STRU`,
+        `Min value 0.000000000000000001 ATOKEN`,
         (value) => Number(value) >= 0.000000000000000001
       )
       .test(
         "Max value",
-        `Max value ${balance} STRU`,
+        `Max value ${balance} ATOKEN`,
         (value) => Number(value) <= Number(balance)
       )
       .required("Please complete this field"),

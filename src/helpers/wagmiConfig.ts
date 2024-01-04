@@ -1,13 +1,13 @@
 import { createConfig, configureChains, mainnet } from "wagmi";
-import { sepolia } from "wagmi/chains";
-import { alchemyProvider } from "wagmi/providers/alchemy";
+import { sepolia,jbc } from "wagmi/chains";
+//import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 import { getDefaultWallets } from "@rainbow-me/rainbowkit";
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [sepolia, mainnet],
+  [sepolia, mainnet,jbc],
   [
-    alchemyProvider({ apiKey: import.meta.env.VITE_ALCHEMY_PROVIDER }),
+    // alchemyProvider({ apiKey: import.meta.env.VITE_ALCHEMY_PROVIDER }),
     publicProvider(),
   ]
 );

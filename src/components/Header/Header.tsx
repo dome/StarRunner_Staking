@@ -1,5 +1,5 @@
 import s from "./Header.module.scss";
-import ethLogo from "../../assets/icons/eth-logo.svg";
+import ethLogo from "../../assets/icons/jbc_24.svg";
 import struLogo from "../../assets/images/stru-logo.png";
 
 import { Icon } from "../SelectIcons/SelectIcons";
@@ -37,16 +37,15 @@ export const Header = () => {
     <header className={s.header}>
       <div className={s.header_container}>
         <a
-          href="https://dexola-camp-project.vercel.app/"
-          target="_blank"
+          href="#"
           rel="noreferrer"
         >
           <Icon name="logo" width={35} height={20} />
         </a>
         {isConnected ? (
           <div className={s.wallet_info}>
-            <img className={s.stru_logo} src={struLogo} alt="STRU logo" />
-            {formattedStruBalance ? formattedStruBalance : "0.00"} STRU
+            <img className={s.stru_logo} src={struLogo} alt="ATOKEN logo" />
+            {formattedStruBalance ? formattedStruBalance : "0.00"} ATOKEN
             <img className={s.eth_logo} src={ethLogo} alt="Ethereum logo" />
             {walletBalance ? formattedWalletBalance : "0.00"}{" "}
             {walletBalance?.symbol}

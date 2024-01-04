@@ -51,31 +51,31 @@ export const Notification: FC = () => {
         {transactionStatus === "approve_loading" && (
           <>
             Approving{" "}
-            <span className={s.notify_accent}>{tokenAmount} STRU </span>{" "}
+            <span className={s.notify_accent}>{tokenAmount} ATOKEN </span>{" "}
             <span className={s.notify_string}>before Staking</span>
           </>
         )}
         {transactionStatus === "stake_loading" && !status && (
           <>
-            Adding <span className={s.notify_accent}>{tokenAmount}</span> STRU
+            Adding <span className={s.notify_accent}>{tokenAmount}</span> ATOKEN
             to Staking
           </>
         )}
         {transactionStatus === "withdraw_loading" && (
           <>
             Withdrawing <span className={s.notify_accent}>{tokenAmount}</span>{" "}
-            STRU
+            ATOKEN
           </>
         )}
         {transactionStatus === "exit_loading" && (
           <>
             Withdrawing <span className={s.notify_accent}>{tokenAmount}</span>{" "}
-            STRU
+            ATOKEN
           </>
         )}
         {transactionStatus === "claim_loading" && (
           <>
-            Adding <span className={s.notify_accent}>{tokenAmount}</span> STRU
+            Adding <span className={s.notify_accent}>{tokenAmount}</span> BTOKEN
             to wallet
           </>
         )}
@@ -90,34 +90,34 @@ export const Notification: FC = () => {
         )}
         {status === "success_approve" && (
           <>
-            <span className={s.notify_accent}>{tokenAmount} STRU </span>{" "}
+            <span className={s.notify_accent}>{tokenAmount} ATOKEN </span>{" "}
             successfully approved
           </>
         )}
         {status === "success_stake" && (
           <>
-            <span className={s.notify_accent}>{tokenAmount} STRU </span>{" "}
+            <span className={s.notify_accent}>{tokenAmount} ATOKEN </span>{" "}
             successfully{" "}
             <span className={s.notify_string}>added to Staking</span>
           </>
         )}
         {status === "success_withdraw" && (
           <>
-            <span className={s.notify_accent}>{tokenAmount} STRU </span>
+            <span className={s.notify_accent}>{tokenAmount} ATOKEN </span>
             successfully{" "}
             <span className={s.notify_string}>added to wallet</span>
           </>
         )}
         {status === "success_exit" && (
           <>
-            <span className={s.notify_accent}>{tokenAmount} STRU </span>{" "}
+            <span className={s.notify_accent}>{tokenAmount} ATOKEN </span>{" "}
             successfully{" "}
             <span className={s.notify_string}>added to wallet</span>
           </>
         )}
         {status === "success_claim" && (
           <>
-            <span className={s.notify_accent}>{tokenAmount} STRU </span>{" "}
+            <span className={s.notify_accent}>{tokenAmount} BTOKEN </span>{" "}
             successfully{" "}
             <span className={s.notify_string}>added to wallet</span>
           </>

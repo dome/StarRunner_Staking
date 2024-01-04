@@ -63,7 +63,7 @@ export const TransactionForm: FC<TransactionFormProps> = ({
               <span className={s.form_available_value}>
                 {balance ? balance : "0"}{" "}
               </span>
-              <span> STRU</span>
+              <span> ATOKEN</span>
             </p>
           </Form>
         );
